@@ -12,6 +12,8 @@
 		A338A01F1EB35D2B00771F48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A338A01D1EB35D2B00771F48 /* Main.storyboard */; };
 		A338A0211EB35D2B00771F48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A338A0201EB35D2B00771F48 /* Assets.xcassets */; };
 		A338A0241EB35D2B00771F48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A338A0221EB35D2B00771F48 /* LaunchScreen.storyboard */; };
+		A338A0301EB386A900771F48 /* p0308_m.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A338A02F1EB386A900771F48 /* p0308_m.jpg */; };
+		A338A0321EB38B4900771F48 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A338A0311EB38B4900771F48 /* StartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		A338A0201EB35D2B00771F48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A338A0231EB35D2B00771F48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A338A0251EB35D2B00771F48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A338A02F1EB386A900771F48 /* p0308_m.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = p0308_m.jpg; sourceTree = "<group>"; };
+		A338A0311EB38B4900771F48 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +61,11 @@
 				A338A0191EB35D2B00771F48 /* AppDelegate.swift */,
 				A338A01B1EB35D2B00771F48 /* ViewController.swift */,
 				A338A01D1EB35D2B00771F48 /* Main.storyboard */,
+				A338A0311EB38B4900771F48 /* StartViewController.swift */,
 				A338A0201EB35D2B00771F48 /* Assets.xcassets */,
 				A338A0221EB35D2B00771F48 /* LaunchScreen.storyboard */,
 				A338A0251EB35D2B00771F48 /* Info.plist */,
+				A338A02F1EB386A900771F48 /* p0308_m.jpg */,
 			);
 			path = keisoku;
 			sourceTree = "<group>";
@@ -126,6 +132,7 @@
 			files = (
 				A338A0241EB35D2B00771F48 /* LaunchScreen.storyboard in Resources */,
 				A338A0211EB35D2B00771F48 /* Assets.xcassets in Resources */,
+				A338A0301EB386A900771F48 /* p0308_m.jpg in Resources */,
 				A338A01F1EB35D2B00771F48 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +146,7 @@
 			files = (
 				A338A01C1EB35D2B00771F48 /* ViewController.swift in Sources */,
 				A338A01A1EB35D2B00771F48 /* AppDelegate.swift in Sources */,
+				A338A0321EB38B4900771F48 /* StartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +310,7 @@
 				A338A02A1EB35D2B00771F48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
