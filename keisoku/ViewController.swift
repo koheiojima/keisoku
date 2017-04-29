@@ -8,17 +8,18 @@
 
 import UIKit
 
+
+
 class ViewController: UIViewController {
+    
     
     @IBAction func nagasa(){
     
     }
 
     @IBAction func kakudo(){
-        
-        
-    }
     
+    }
     
     
     override func viewDidLoad() {

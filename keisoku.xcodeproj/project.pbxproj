@@ -14,6 +14,8 @@
 		A338A0241EB35D2B00771F48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A338A0221EB35D2B00771F48 /* LaunchScreen.storyboard */; };
 		A338A0301EB386A900771F48 /* p0308_m.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A338A02F1EB386A900771F48 /* p0308_m.jpg */; };
 		A338A0321EB38B4900771F48 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A338A0311EB38B4900771F48 /* StartViewController.swift */; };
+		A338A0341EB456DC00771F48 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A338A0331EB456DC00771F48 /* CameraViewController.swift */; };
+		A338A0361EB45DBB00771F48 /* bunndoki.png in Resources */ = {isa = PBXBuildFile; fileRef = A338A0351EB45DBB00771F48 /* bunndoki.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		A338A0251EB35D2B00771F48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A338A02F1EB386A900771F48 /* p0308_m.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = p0308_m.jpg; sourceTree = "<group>"; };
 		A338A0311EB38B4900771F48 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		A338A0331EB456DC00771F48 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		A338A0351EB45DBB00771F48 /* bunndoki.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bunndoki.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +65,12 @@
 				A338A0191EB35D2B00771F48 /* AppDelegate.swift */,
 				A338A01B1EB35D2B00771F48 /* ViewController.swift */,
 				A338A01D1EB35D2B00771F48 /* Main.storyboard */,
+				A338A0331EB456DC00771F48 /* CameraViewController.swift */,
 				A338A0311EB38B4900771F48 /* StartViewController.swift */,
 				A338A0201EB35D2B00771F48 /* Assets.xcassets */,
 				A338A0221EB35D2B00771F48 /* LaunchScreen.storyboard */,
 				A338A0251EB35D2B00771F48 /* Info.plist */,
+				A338A0351EB45DBB00771F48 /* bunndoki.png */,
 				A338A02F1EB386A900771F48 /* p0308_m.jpg */,
 			);
 			path = keisoku;
@@ -134,6 +140,7 @@
 				A338A0211EB35D2B00771F48 /* Assets.xcassets in Resources */,
 				A338A0301EB386A900771F48 /* p0308_m.jpg in Resources */,
 				A338A01F1EB35D2B00771F48 /* Main.storyboard in Resources */,
+				A338A0361EB45DBB00771F48 /* bunndoki.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A338A01C1EB35D2B00771F48 /* ViewController.swift in Sources */,
+				A338A0341EB456DC00771F48 /* CameraViewController.swift in Sources */,
 				A338A01A1EB35D2B00771F48 /* AppDelegate.swift in Sources */,
 				A338A0321EB38B4900771F48 /* StartViewController.swift in Sources */,
 			);
@@ -271,8 +279,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PLRTA5B4ZM;
 				INFOPLIST_FILE = keisoku/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.litech.keisoku;
+				PRODUCT_BUNDLE_IDENTIFIER = keisoku;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -284,8 +293,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PLRTA5B4ZM;
 				INFOPLIST_FILE = keisoku/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.litech.keisoku;
+				PRODUCT_BUNDLE_IDENTIFIER = keisoku;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
