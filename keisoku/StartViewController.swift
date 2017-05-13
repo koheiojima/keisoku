@@ -7,79 +7,42 @@
 //
 
 import UIKit
-import CoreMotion
+import TrueScale
 
 class StartViewController: UIViewController {
     
-    
-    let cmManager = CMMotionManager()
+    //let myNativeBoundSize: CGSize = UIScreen.main.nativeBounds.size
+    //変更するvar
+    var squares = [UIView]()
+    var labels = [UILabel]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        //変更しない let
+        let windowH: CGFloat = self.view.bounds.height
+        let rect = TSRect(x: 0, y: 0, width: 10, height: 1, unit: .mm).cgrect
+        var bar = TSRect(x: 0, y: 0, width: 10, height: 0.2, unit: .mm).cgrect
+        var labelRect = TSRect(x: 17, y: 0, width: 4, height: 4).cgrect
+        let count: Int = Int(windowH / rect.height) * 10
         
-        self.distance()
-        
-    }
-    func distance() {
-        
-        self.cmManager.deviceMotionUpdateInterval = 0.01
-        let dt = self.cmManager.deviceMotionUpdateInterval
-        var aData = [0.0]
-        var vData = [0.0]
-        var s = 0.0
-        var loopCount = 0
-    
-    
-        self.cmManager.startDeviceMotionUpdatesToQueue(NSOperationQueue.currentQueue()!) { (data, error) -> Void in
-            defer {
-                loopCount++
+        for i in (0 ..< count + 1) {
+            bar.origin.y = CGFloat(i) * rect.height
+            let square = UIView(frame: bar)
+            if i%10==0 {
+                square.frame.size.width *= 1.5
+                labelRect.origin.y = CGFloat(i) * rect.height
+                let label = UILabel(frame: labelRect)
+                label.text = String(Int(i/10))
+                label.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi/2))
+                label.frame.origin.y -= 5
+                labels.append(label)
+                self.view.addSubview(label)
             }
-            let motionData = data!
-            let x = motionData.userAcceleration.x
-            let y = motionData.userAcceleration.y
-            let z = motionData.userAcceleration.z
-            
-            let pa = aData[loopCount]
-            let a = cbrt(x * y * z)
-            let dv = (a + pa) * dt * 0.5
-            aData.append(a)
-            
-            let pv = vData[loopCount]
-            let v = pv + dv
-            let ds = (v + dv) * dt * 0.5
-            vData.append(v)
-            
-            s += ds
-        }
-        
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) { () -> Void in
-            while true {
-                NSThread.sleepForTimeInterval(1)
-                print("")
-                print(aData.last!)
-                print(vData.last!)
-                print(s)
-            }
+            square.backgroundColor = UIColor.darkGray
+            squares.append(square)
+            self.view.addSubview(square)
         }
     }
-    
-
-    
-    
-    
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
 
     
 }

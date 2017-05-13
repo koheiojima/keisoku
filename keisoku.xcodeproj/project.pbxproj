@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		98946468AAFC6C23543E35ED /* Pods_keisoku.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E57D0DC204C021E58FA1955 /* Pods_keisoku.framework */; };
 		A338A01A1EB35D2B00771F48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A338A0191EB35D2B00771F48 /* AppDelegate.swift */; };
 		A338A01C1EB35D2B00771F48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A338A01B1EB35D2B00771F48 /* ViewController.swift */; };
 		A338A01F1EB35D2B00771F48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A338A01D1EB35D2B00771F48 /* Main.storyboard */; };
@@ -16,9 +17,12 @@
 		A338A0321EB38B4900771F48 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A338A0311EB38B4900771F48 /* StartViewController.swift */; };
 		A338A0341EB456DC00771F48 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A338A0331EB456DC00771F48 /* CameraViewController.swift */; };
 		A338A0361EB45DBB00771F48 /* bunndoki.png in Resources */ = {isa = PBXBuildFile; fileRef = A338A0351EB45DBB00771F48 /* bunndoki.png */; };
+		A37298301EBF06F00019D44C /* DeviceInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372982F1EBF06F00019D44C /* DeviceInformation.swift */; };
+		A372986A1EC6A5C60019D44C /* TrueScale.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A37298691EC6A5C60019D44C /* TrueScale.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E57D0DC204C021E58FA1955 /* Pods_keisoku.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_keisoku.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A338A0161EB35D2B00771F48 /* keisoku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = keisoku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A338A0191EB35D2B00771F48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A338A01B1EB35D2B00771F48 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +34,10 @@
 		A338A0311EB38B4900771F48 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		A338A0331EB456DC00771F48 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		A338A0351EB45DBB00771F48 /* bunndoki.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bunndoki.png; sourceTree = "<group>"; };
+		A372982F1EBF06F00019D44C /* DeviceInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceInformation.swift; sourceTree = "<group>"; };
+		A37298691EC6A5C60019D44C /* TrueScale.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TrueScale.framework; path = "../../../Library/Developer/Xcode/DerivedData/keisoku-gvmowhlegdpfucgoaylzigummaov/Build/Products/Debug-iphonesimulator/TrueScale/TrueScale.framework"; sourceTree = "<group>"; };
+		B3FC4BDB439D7988707B5363 /* Pods-keisoku.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keisoku.release.xcconfig"; path = "Pods/Target Support Files/Pods-keisoku/Pods-keisoku.release.xcconfig"; sourceTree = "<group>"; };
+		BFE749F69C28B99484D6CF46 /* Pods-keisoku.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keisoku.debug.xcconfig"; path = "Pods/Target Support Files/Pods-keisoku/Pods-keisoku.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +45,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A372986A1EC6A5C60019D44C /* TrueScale.framework in Frameworks */,
+				98946468AAFC6C23543E35ED /* Pods_keisoku.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		971A999C9B1FE2CE71D12F3B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BFE749F69C28B99484D6CF46 /* Pods-keisoku.debug.xcconfig */,
+				B3FC4BDB439D7988707B5363 /* Pods-keisoku.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A338A00D1EB35D2A00771F48 = {
 			isa = PBXGroup;
 			children = (
 				A338A0181EB35D2B00771F48 /* keisoku */,
 				A338A0171EB35D2B00771F48 /* Products */,
+				971A999C9B1FE2CE71D12F3B /* Pods */,
+				C5D3F65C41FCDCDE848444C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,8 +93,18 @@
 				A338A0251EB35D2B00771F48 /* Info.plist */,
 				A338A0351EB45DBB00771F48 /* bunndoki.png */,
 				A338A02F1EB386A900771F48 /* p0308_m.jpg */,
+				A372982F1EBF06F00019D44C /* DeviceInformation.swift */,
 			);
 			path = keisoku;
+			sourceTree = "<group>";
+		};
+		C5D3F65C41FCDCDE848444C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A37298691EC6A5C60019D44C /* TrueScale.framework */,
+				3E57D0DC204C021E58FA1955 /* Pods_keisoku.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +114,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A338A0281EB35D2B00771F48 /* Build configuration list for PBXNativeTarget "keisoku" */;
 			buildPhases = (
+				B33CEFBC8A421FFF1949B1CF /* [CP] Check Pods Manifest.lock */,
 				A338A0121EB35D2B00771F48 /* Sources */,
 				A338A0131EB35D2B00771F48 /* Frameworks */,
 				A338A0141EB35D2B00771F48 /* Resources */,
+				34A2BB49285D61A7972C30B2 /* [CP] Embed Pods Frameworks */,
+				D4028C5DA01400D1AF870F27 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,12 +180,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		34A2BB49285D61A7972C30B2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-keisoku/Pods-keisoku-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B33CEFBC8A421FFF1949B1CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D4028C5DA01400D1AF870F27 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-keisoku/Pods-keisoku-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A338A0121EB35D2B00771F48 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A338A01C1EB35D2B00771F48 /* ViewController.swift in Sources */,
+				A37298301EBF06F00019D44C /* DeviceInformation.swift in Sources */,
 				A338A0341EB456DC00771F48 /* CameraViewController.swift in Sources */,
 				A338A01A1EB35D2B00771F48 /* AppDelegate.swift in Sources */,
 				A338A0321EB38B4900771F48 /* StartViewController.swift in Sources */,
@@ -275,6 +358,7 @@
 		};
 		A338A0291EB35D2B00771F48 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFE749F69C28B99484D6CF46 /* Pods-keisoku.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PLRTA5B4ZM;
@@ -289,6 +373,7 @@
 		};
 		A338A02A1EB35D2B00771F48 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3FC4BDB439D7988707B5363 /* Pods-keisoku.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PLRTA5B4ZM;
