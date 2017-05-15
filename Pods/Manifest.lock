@@ -1,0 +1,12 @@
+PODS:
+  - TrueScale (1.0.0)
+
+DEPENDENCIES:
+  - TrueScale
+
+SPEC CHECKSUMS:
+  TrueScale: 689c35016f71aa9b03c15b3a5bf6aaec21501e48
+
+PODFILE CHECKSUM: 0be095f05a00bfec270cd8e6f9845aa8047afc6b
+
+COCOAPODS: 1.2.1

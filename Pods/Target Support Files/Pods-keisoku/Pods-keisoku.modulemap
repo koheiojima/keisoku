@@ -1,0 +1,6 @@
+framework module Pods_keisoku {
+  umbrella header "Pods-keisoku-umbrella.h"
+
+  export *
+  module * { export * }
+}

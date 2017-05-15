@@ -40,7 +40,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" alpha="0.55000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bunndoki.png" translatesAutoresizingMaskIntoConstraints="NO" id="Eul-Dr-g6V">
-                                <rect key="frame" x="1" y="242.5" width="373" height="174.5"/>
+                                <rect key="frame" x="1" y="242" width="373" height="175"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Eul-Dr-g6V" secondAttribute="height" multiplier="367:172" id="t8N-Ss-zXm"/>
                                 </constraints>
@@ -148,8 +148,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ydb-n8-Goh">
-                                <rect key="frame" x="225" y="28" width="95" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ydb-n8-Goh">
+                                <rect key="frame" x="186" y="41" width="134" height="42"/>
                                 <color key="backgroundColor" red="0.8955856421021321" green="0.9516583850964363" blue="0.90360355424663708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Topへ">
@@ -162,14 +162,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="Ydb-n8-Goh" secondAttribute="trailing" constant="33" id="aUR-3c-54Z"/>
-                            <constraint firstItem="Ydb-n8-Goh" firstAttribute="top" secondItem="8NW-of-hlD" secondAttribute="bottom" constant="2" id="w8u-oP-NhC"/>
+                            <constraint firstItem="Ydb-n8-Goh" firstAttribute="top" secondItem="8NW-of-hlD" secondAttribute="bottom" constant="21" id="dCE-HV-5bz"/>
+                            <constraint firstItem="Ydb-n8-Goh" firstAttribute="leading" secondItem="hgx-cn-w07" secondAttribute="leadingMargin" constant="170" id="mOq-cc-WW8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ydb-n8-Goh" secondAttribute="trailing" constant="39" id="wov-Ql-WOk"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VYK-Db-DRx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="789.375" y="122.53521126760563"/>
+            <point key="canvasLocation" x="785.625" y="120.4225352112676"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="6hi-Y0-xpm">

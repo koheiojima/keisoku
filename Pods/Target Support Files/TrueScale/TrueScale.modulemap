@@ -1,0 +1,6 @@
+framework module TrueScale {
+  umbrella header "TrueScale-umbrella.h"
+
+  export *
+  module * { export * }
+}

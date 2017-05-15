@@ -12,10 +12,11 @@ import TrueScale
 class StartViewController: UIViewController {
     
     //let myNativeBoundSize: CGSize = UIScreen.main.nativeBounds.size
+    
     //変更するvar
     var squares = [UIView]()
     var labels = [UILabel]()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //変更しない let
@@ -43,6 +44,6 @@ class StartViewController: UIViewController {
             self.view.addSubview(square)
         }
     }
-
+    
     
 }
