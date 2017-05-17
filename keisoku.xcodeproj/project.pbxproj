@@ -19,6 +19,7 @@
 		A338A0361EB45DBB00771F48 /* bunndoki.png in Resources */ = {isa = PBXBuildFile; fileRef = A338A0351EB45DBB00771F48 /* bunndoki.png */; };
 		A37298301EBF06F00019D44C /* DeviceInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372982F1EBF06F00019D44C /* DeviceInformation.swift */; };
 		A372986A1EC6A5C60019D44C /* TrueScale.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A37298691EC6A5C60019D44C /* TrueScale.framework */; };
+		A372986C1ECB2BF00019D44C /* sample1.png in Resources */ = {isa = PBXBuildFile; fileRef = A372986B1ECB2BF00019D44C /* sample1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		A338A0351EB45DBB00771F48 /* bunndoki.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bunndoki.png; sourceTree = "<group>"; };
 		A372982F1EBF06F00019D44C /* DeviceInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceInformation.swift; sourceTree = "<group>"; };
 		A37298691EC6A5C60019D44C /* TrueScale.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TrueScale.framework; path = "../../../Library/Developer/Xcode/DerivedData/keisoku-gvmowhlegdpfucgoaylzigummaov/Build/Products/Debug-iphonesimulator/TrueScale/TrueScale.framework"; sourceTree = "<group>"; };
+		A372986B1ECB2BF00019D44C /* sample1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sample1.png; path = ../../../../Downloads/sample1.png; sourceTree = "<group>"; };
 		B3FC4BDB439D7988707B5363 /* Pods-keisoku.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keisoku.release.xcconfig"; path = "Pods/Target Support Files/Pods-keisoku/Pods-keisoku.release.xcconfig"; sourceTree = "<group>"; };
 		BFE749F69C28B99484D6CF46 /* Pods-keisoku.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keisoku.debug.xcconfig"; path = "Pods/Target Support Files/Pods-keisoku/Pods-keisoku.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,6 +95,7 @@
 				A338A0251EB35D2B00771F48 /* Info.plist */,
 				A338A0351EB45DBB00771F48 /* bunndoki.png */,
 				A338A02F1EB386A900771F48 /* p0308_m.jpg */,
+				A372986B1ECB2BF00019D44C /* sample1.png */,
 				A372982F1EBF06F00019D44C /* DeviceInformation.swift */,
 			);
 			path = keisoku;
@@ -175,6 +178,7 @@
 				A338A0301EB386A900771F48 /* p0308_m.jpg in Resources */,
 				A338A01F1EB35D2B00771F48 /* Main.storyboard in Resources */,
 				A338A0361EB45DBB00771F48 /* bunndoki.png in Resources */,
+				A372986C1ECB2BF00019D44C /* sample1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,29 +13,31 @@ class StartViewController: UIViewController {
     
     //let myNativeBoundSize: CGSize = UIScreen.main.nativeBounds.size
     
-    //変更するvar
+    //変数var
     var squares = [UIView]()
     var labels = [UILabel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //変更しない let
+        //定数 let
+        let windowW: CGFloat = self.view.bounds.width
         let windowH: CGFloat = self.view.bounds.height
-        let rect = TSRect(x: 0, y: 0, width: 10, height: 1, unit: .mm).cgrect
-        var bar = TSRect(x: 0, y: 0, width: 10, height: 0.2, unit: .mm).cgrect
+        let rect = TSRect(x: 0, y: 95, width: 1, height: 10, unit: .mm).cgrect
+        var bar = TSRect(x: 0, y: 95, width: 0.2, height: 10, unit: .mm).cgrect
         var labelRect = TSRect(x: 17, y: 0, width: 4, height: 4).cgrect
-        let count: Int = Int(windowH / rect.height) * 10
+        let count: Int = Int(windowW / rect.width) * 10
         
         for i in (0 ..< count + 1) {
-            bar.origin.y = CGFloat(i) * rect.height
+            bar.origin.x = CGFloat(i) * rect.width
             let square = UIView(frame: bar)
             if i%10==0 {
-                square.frame.size.width *= 1.5
-                labelRect.origin.y = CGFloat(i) * rect.height
+                
+                square.frame.size.height *= -1.5
+                square.transform.translatedBy(x: 0, y: 100)
+                labelRect.origin.x = CGFloat(i) * rect.width
                 let label = UILabel(frame: labelRect)
                 label.text = String(Int(i/10))
-                label.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi/2))
-                label.frame.origin.y -= 5
+                label.frame.origin.x -= 5
                 labels.append(label)
                 self.view.addSubview(label)
             }
